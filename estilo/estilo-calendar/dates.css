@@ -1,0 +1,68 @@
+
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month {
+    /* border: 1px solid red; */
+    width: 350px;
+    margin-bottom: 91px;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+}
+
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle {
+    grid-column: 1 / 8;
+    grid-row: 1;
+}
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle .monthnames {
+    padding: 20px 0 25px 0;
+
+    font-family: 'Work Sans';
+    font-variant: small-caps;
+    color: var(--cor4);
+    opacity: 0.7;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle .monthnames .today-month {
+    font-size: 1.7rem;
+    font-weight: 300;
+    margin: -5px;
+    position: relative;
+}
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle .monthnames .prev-month,
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle .monthnames .next-month {
+    color: var(--cor4);
+    font-size: 1.25rem;
+    opacity: 0.1;
+}
+
+.calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-callevent {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+
+    color: var(--cor4);
+    opacity: 0.85;
+
+    grid-column: 1 / 8;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    top: 5px;
+}
+
+@media (max-width: 991.99px) {
+    .calendar .calendar-container .calendar-content .calendar-dates .calendar-month {
+        margin-bottom: 40px;
+    }
+    .calendar .calendar-container .calendar-content .calendar-dates .calendar-month .calendar-monthtitle .monthnames {
+        padding-top: 0;
+    }
+}

@@ -1,0 +1,49 @@
+{
+    "headerLinks": [
+        { "opt": "Home", "link": "Link" },
+        { "opt": "Sobre Nós", "Link": "Link"},
+        { "opt": "Calendário", "link": "Link" },
+        { "opt": "Notícias", "link": "Link" }
+    ],
+    "carouselItems": [
+        {
+            "img": "/imgs/dupla 2.JPG",
+            "evento": "SEMANA SINFÔNICA",
+            "artista": "Amy & Gug",
+            "topic": "Dupla 'Sinforock'",
+            "desc": "Amy e Gug, da dupla Sinforock, combinam o estilo sinfônico e clássico com o ritmo do rock'n'roll."
+        },
+        {
+            "img": "/imgs/violino1.JPG",
+            "evento": "SEMANA SINFÔNICA",
+            "artista": "Músico George",
+            "topic": "Violonista Clássico",
+            "desc": "O violonista George realizará um tributo ao mestre Yehudi Menuhin, revivendo sua genialidade em uma apresentação emocionante."
+        },
+        {
+            "img": "/imgs/orquestra-3.JPG",
+            "evento": "SEMANA SINFÔNICA",
+            "artista": "Maestro Doug",
+            "topic": "Orquestra Sinfônica",
+            "desc": "O Maestro Doug é conhecido por guiar sua orquestra sinfônica com precisão e paixão. Ao lado de músicos talentosos escolhidos a dedo, ele promete uma apresentação cheia de emoção e harmonia."
+        }
+    ],
+    "calendarEvents": [
+        { "day": "Dom", "date": "Dia 1", "desc": "Lorem ipsum dolor sit amet." },
+        { "day": "Ter", "date": "Dia 3", "desc": "Lorem ipsum dolor sit amet." },
+        { "day": "Sex", "date": "Dia 6", "desc": "Lorem ipsum dolor sit amet." },
+        { "day": "Sáb", "date": "Dia 7", "desc": "Lorem ipsum dolor sit amet." }
+    ],
+    "calendarInfo": {
+        "title": "Calendário",
+        "days": "dom, seg, ter, qua, qui, sex, sab",
+        "desc": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    },
+    "news": [
+        { "title": "Notícia 1", "desc": "Lorem ipsum dolor sit, amet consectetur adipisicing elit." },
+        { "title": "Notícia 2", "desc": "Lorem ipsum dolor sit amet consectetur." },
+        { "title": "Notícia 3", "desc": "Lorem ipsum dolor sit amet consectetur." },
+        { "title": "Notícia 4", "desc": "Lorem ipsum dolor sit amet consectetur." }
+    ]
+}
+  

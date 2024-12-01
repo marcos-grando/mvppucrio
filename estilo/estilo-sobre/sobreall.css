@@ -1,0 +1,339 @@
+.sobreall {
+    /* border: 1px solid blue; */
+    background-color: var(--cor66);
+    height: auto; width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.sobreall .onlypage {
+    height: 50vh; width: 100%;
+    max-height: 600px;
+    margin-bottom: auto;
+    position: relative;
+}
+.sobreall .onlypage img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+    object-position: 100% 64%;
+}
+
+.sobreall .onlypage header {
+    background-color: var(--cor000);
+    height: 50px; width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    position: fixed;
+    z-index: 100;
+}
+.sobreall .onlypage header nav {
+    height: 100%; width: 80%;
+    max-width: 1280px;
+
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+.sobreall header nav a {
+    width: auto;
+
+    padding-right: 40px;
+    font-weight: 400;
+    color: var(--cor1);
+    text-decoration: none;
+    text-shadow: -1px -1px 1px var(--cor0), 1px 1px 1px var(--cor0);
+}
+
+
+
+.sobreall .sobre-container {
+    /* border: 1px solid yellow; */
+    height: auto; width: 100%;
+    max-width: 1280px;
+    padding: 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.sobreall .sobre-container .all-title {
+    /* border: 1px solid red; */
+    border-bottom: 2px ridge var(--cor9);
+    height: auto; width: 100%;
+    padding: 40px 0 10px 0;
+
+    line-height: 1;
+    display: flex;
+    align-items: flex-end;
+}
+.spbreall .sobre-container .all-title h1,
+.sobreall .sobre-container .all-title h2 {
+
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.sobreall .sobre-container .all-title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--cor2);
+
+    text-shadow: 1px 1px 5px var(--cor66), 1px -1px 5px var(--cor66), -1px 1px 5px var(--cor66), -1px -1px 5px var(--cor66);
+
+    margin-left: 10px;
+    position: absolute;
+}
+.sobreall .sobre-container .all-title h1 {
+    font-size: 3.2rem;
+    color: var(--cor5);
+    opacity: 0.5;
+
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 0px var(--cor7), 1px -1px 0px var(--cor7), -1px 1px 0px var(--cor7), -1px -1px 0px var(--cor7);
+}
+.sobreall .sobre-container .sobre-content {
+    height: 100%; width: 100%;
+    max-width: 1140px;
+    padding: 40px 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.sobreall .sobre-container .sobre-content .text{
+    padding: 0 5px;
+}
+.sobreall .sobre-container .sobre-content .text p {
+    margin-bottom: 15px;
+
+    font-size: 1.1rem;
+    font-weight: 400;
+
+    color: var(--cor4);
+    font-family: 'Elaine Sans';
+    line-height: 28px;
+}
+.sobreall .sobre-container .sobre-content .text p:nth-child(1) {
+    color: var(--cor4);
+    font-size: 1.20rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+
+
+.sobreall .sobre-container .sobre-content .sobre-slide {
+    height: 600px; width: 100%;
+    margin-bottom: 40px;
+
+    display: grid;
+    overflow: hidden;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .slide {
+    height: 100%; width: 100%;
+
+    display: grid;
+    overflow: hidden; 
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .slide .item {
+    border: 2px solid var(--cor4);
+    height: 100%; width: 100%;
+
+    overflow: hidden;
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .slide .item img {
+    height: 100%; width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .slide .item .content {
+    height: 100%; width: 100%;
+    padding: 25px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    font-family: 'Elaine Sans', 'Poppins', 'Work Sans';
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--cor6);
+
+    grid-area: 1 / 1 / 2 / 2;
+    z-index: 10;
+}
+
+
+
+.sobreall .sobre-container .sobre-content .sobre-slide .slide.next .item:nth-child(3) img {
+    height: 40%;
+    border-radius: 50px;
+    transform: translateX(-100%);
+    filter: blur(10px);
+    animation: outImageNext 500ms ease-out 1 forwards;
+}
+@keyframes outImageNext {
+    to {
+        border-radius: 0;
+        height: 100%;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .slide.prev .item:nth-child(1) img {
+        border-radius: 0;
+        height: 100%;
+        filter: blur(0);
+        transform: translateX(0);
+        animation: outImagePrev 500ms ease-out 1 forwards;
+}
+@keyframes outImagePrev {
+    to {
+        height: 40%;
+        border-radius: 50px;
+        transform: translateX(-100%);
+        filter: blur(10px);
+    }
+}
+
+
+.sobreall .sobre-container .sobre-content .sobre-slide .arrows {
+    height: 100%; width: 100%;
+    padding: 5px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    grid-area: 1 / 1 / 2 / 2;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .arrows button {
+    border: none;
+    background-color: transparent;
+    height: 30px; width: 30px;
+    border-radius: 50%;
+
+    font-family: monospace;
+    color: var(--cor1);
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px var(--cor4), 1px -1px 1px var(--cor4), -1px 1px 1px var(--cor4), -1px -1px 1px var(--cor4);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0.7;
+    transition: 0.2s;
+    cursor: pointer;
+    z-index: 100;
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .arrows button:nth-child(1):hover {
+    color: var(--cor3);
+    transform: translateX(-3px);
+}
+.sobreall .sobre-container .sobre-content .sobre-slide .arrows button:nth-child(2):hover {
+    color: var(--cor3);
+    transform: translateX(3px);
+}
+
+@media (max-width: 575.99px) {
+    .sobreall .onlypage header nav {
+        justify-content: center;
+        padding-left: 0;
+    }
+    .sobreall .onlypage header nav a {    
+        padding: 0 17.5px;
+        margin-right: 0;
+        font-size: 0.8rem;
+    }
+    .sobreall .sobre-container .all-title h2 {
+        font-size: 1.7rem;
+    }
+    .sobreall .sobre-container .all-title h1 {
+        font-size: 2.05rem;
+    }
+    .sobreall .sobre-container .sobre-content {
+        padding: 40px 0;
+    }
+    .sobreall .sobre-container .sobre-content .text p {
+        padding: 0 6px;
+        font-size: 0.9rem;
+        line-height: 22px;
+    }
+    .sobreall .sobre-container .sobre-content .text p:nth-child(1) {
+        padding: 0 2px;
+        font-size: 0.98rem;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide {
+        height: 400px;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide .arrows button {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.99px) {
+    .sobreall .sobre-container .all-title h2 {
+        font-size: 2rem;
+    }
+    .sobreall .sobre-container .all-title h1 {
+        font-size: 2.5rem;
+    }
+    .sobreall .sobre-container .sobre-content {
+        padding: 40px 0;
+    }
+    .sobreall .sobre-container .sobre-content .text p {
+        padding: 0 6px;
+        font-size: 0.95rem;
+        line-height: 22px;
+    }
+    .sobreall .sobre-container .sobre-content .text p:nth-child(1) {
+        padding: 0 2px;
+        font-size: 1.05rem;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide {
+        height: 450px;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide .arrows button {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.99px) {
+    .sobreall .sobre-container .all-title h2 {
+        font-size: 2rem;
+    }
+    .sobreall .sobre-container .all-title h1 {
+        font-size: 2.5rem;
+    }
+    .sobreall .sobre-container .sobre-content {
+        padding: 40px 0;
+    }
+    .sobreall .sobre-container .sobre-content .text p {
+        padding: 0 6px;
+        font-size: 1rem;
+        line-height: 22px;
+    }
+    .sobreall .sobre-container .sobre-content .text p:nth-child(1) {
+        padding: 0 2px;
+        font-size: 1.15rem;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide {
+        height: 500px;
+    }
+    .sobreall .sobre-container .sobre-content .sobre-slide .arrows button {
+        font-size: 2.1rem;
+    }
+}
